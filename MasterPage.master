@@ -1,0 +1,58 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <!--Displays at the top of the browser throughout app --> 
+    <title>EMR Application</title>
+    <link type="text/css" href="~/App_themes/MyStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="content">
+    <h1>EMR Application</h1>
+        <br />
+        <br />
+        <!--creating the style and references to the site map data sources added with the designer --> 
+      <asp:Menu ID="Menu1" runat="server" CssClass="RsponsiveMenu" 
+          DataSourceID="SiteMapDataSource1"  
+          Orientation="Horizontal" 
+          StaticDisplayLevels="2" BackColor="#E3EAEB" DynamicHorizontalOffset="1" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#666666" StaticSubMenuIndent="10px" >
+          <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+          <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+          <DynamicMenuStyle BackColor="#E3EAEB" />
+          <DynamicSelectedStyle BackColor="#1C5E55" />
+          <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+          <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+          <StaticSelectedStyle BackColor="#1C5E55" />
+            </asp:Menu>
+      
+            <br />
+            <br />
+                   <br />
+        <br />
+         <!--Where individual page content will go --> 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         <br />
+            <br /> 
+            <br />
+            <br />
+         <!--creates a site map path for below the individual pages --> 
+          <asp:SiteMapPath ID="SiteMapPath1" runat="server" 
+               RenderCurrentNodeAsLink="True" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" | ">
+              <CurrentNodeStyle ForeColor="#333333" />
+              <NodeStyle Font-Bold="True" ForeColor="#990000" />
+              <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+              <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+            </asp:SiteMapPath>
+             
+           
+             <asp:SiteMapDataSource ID="SiteMapDataSource1" 
+                 runat="server" />    
+    </div>
+    </form>
+</body>
+</html>

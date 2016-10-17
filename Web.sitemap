@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <!--Everything inside big daddy node -->
+    <siteMapNode url="~/Default.aspx" title="Home"  description="Return to Our Home Page">
+      <!--Children will get get the things from the db, and their children are the edit/add pages -->
+      <siteMapNode url="~/Donations.aspx" title="Donations" >
+        <siteMapNode url="~/Donation.aspx" title="Add Donation" >
+        </siteMapNode>
+      </siteMapNode>
+      
+      <siteMapNode url="~/DonorLocations.aspx" title="Donor Locations" >
+        <siteMapNode url="~/DonorLocation.aspx" title="Add Donor Location" >
+        </siteMapNode>
+      </siteMapNode>
+      
+      <siteMapNode url="~/Donors.aspx" title="Donor" >
+        <siteMapNode url="~/Donor.aspx" title="Add Donor" >
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode url="~/Specimens.aspx" title="Specimens" >
+        <siteMapNode url="~/Specimen.aspx" title="Add Specimen" >
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode url="~/StorageDevices.aspx" title="Storage Devices" >
+        <siteMapNode url="~/StorageDevice.aspx" title="Add Storage Device" >
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode url="~/DeviceTypes.aspx" title="Device Types" >
+        <siteMapNode url="~/DeviceType.aspx" title="Add Device Type" >
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode url="~/StorageLocations.aspx" title="Storage Locations" >
+        <siteMapNode url="~/StorageLocation.aspx" title="Add Storage Location" >
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode url="~/SiteUsers.aspx" title="Site Users" >
+        <siteMapNode url="~/SiteUser.aspx" title="Add Site User" >
+        </siteMapNode>
+      </siteMapNode>
+  
+  
+      
+    </siteMapNode>
+  
+</siteMap>

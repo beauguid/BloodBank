@@ -1,0 +1,38 @@
+﻿body 
+{
+    background-color:Gray;
+    height:100%;
+}
+
+html,form {
+	height: 100%;
+}
+
+#content
+{
+ margin-left:auto;
+ margin-right:auto;
+ width:75%;
+ background-color:White;
+ border-left: thin solid black;
+ border-right: thin solid black;
+ position:relative; 
+ height:100%; 
+}
+
+.content
+{
+ margin-left:auto;
+ margin-right:auto;
+ width:700px;
+ background-color:White;
+ border-left: thin solid black;
+ border-right: thin solid black;
+ position:relative; 
+ height:100%; 
+}
+
+.textbox
+{
+    width:255px;
+}
